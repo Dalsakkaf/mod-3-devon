@@ -82,7 +82,7 @@ function generatePassword() {
   };
   var password = [];
 
-  for (var i = 0; i < enter; i++) {
+  for (var i = 0; i < password; i++) {
     var pickChoices = choices[Math.floor(Math.random() * choices.length)];
     password.push(pickChoices);
   };
@@ -102,6 +102,9 @@ function UserInput(ps) {
 
 };
 
+function $0(textContent) {
+  document.getElementById("password").textContent = textContent;
+}
 
 // these prompts 
 
@@ -117,16 +120,16 @@ generateBtn.addEventListener("click", writePassword);
 
 // GIVEN I need a new, secure password
 // WHEN I click the button to generate a password
-// THEN I am presented with a series of prompts for password criteria
+// THEN I am presented with a series of prompts for password criteria - YES
 // WHEN prompted for password criteria
-// THEN I select which criteria to include in the password
+// THEN I select which criteria to include in the password - YES
 // WHEN prompted for the length of the password
-// THEN I choose a length of at least 8 characters and no more than 128 characters YES!
+// THEN I choose a length of at least 8 characters and no more than 128 characters - YES
 // WHEN asked for character types to include in the password
-// THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+// THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters - YES
 // WHEN I answer each prompt
-// THEN my input should be validated and at least one character type should be selected
+// THEN my input should be validated and at least one character type should be selected - YES
 // WHEN all prompts are answered
-// THEN a password is generated that matches the selected criteria
+// THEN a password is generated that matches the selected criteria - YES
 // WHEN the password is generated
 // THEN the password is either displayed in an alert or written to the page
